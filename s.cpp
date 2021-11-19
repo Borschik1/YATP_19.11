@@ -5,7 +5,7 @@ int num_of_ways(int numb, int summ) {
 	if (summ < 0 || numb * 9 < summ) {
 		return 0;
 	}
-	if (numb * 9 == summ || (numb == 1 && summ < 10)) {
+	if (numb * 9 == summ || (numb == 1 && summ < 10) || summ == 0) {
 		return 1;
 	}
 	int ans = 0;
